@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content - yuvraj</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="content-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+</head>
+<body class="dark-mode">
+    <!-- Intro Video Animation -->
+    <div id="intro-animation" class="intro-animation">
+        <video id="intro-video" class="intro-video" src="front.mp4" muted></video>
+    </div>
+    
+    <!-- Grid Background with Radial Mask -->
+    <div class="grid-background">
+        <div class="radial-mask"></div>
+    </div>
+    
+    <div class="page-container">
+        <div class="container">
+            <div class="edge-left"></div>
+            <nav>
+                <div class="nav-links">
+                    <a href="./index.html" class="nav-link" target="_self" onclick="window.location.href='index.html'; return false;">home</a>
+                    <a href="#" class="nav-link">gallery</a>
+                    <a href="./interactive.html" class="nav-link" target="_self" onclick="window.location.href='interactive.html'; return false;">interactive</a>
+                    <a href="./content.html" class="nav-link active">content</a>
+                    <a href="./resume.html" class="nav-link" target="_self" onclick="window.location.href='resume.html'; return false;">resume</a>
+                </div>
+                <div class="nav-right">
+                    <div id="spotify-container" class="spotify-container">
+                        <div class="spotify-icon"><i class="fab fa-spotify"></i></div>
+                        <div class="spotify-text-container">
+                            <span id="spotify-now-playing" class="spotify-now-playing">Not playing</span>
+                        </div>
+                    </div>
+                    <div id="clock" class="clock"></div>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+            </nav>
+            
+            <main>
+                <section class="content-intro">
+                    <h1>content <span class="stylized-list">list</span>.</h1>
+                    <p>i've seen a lot of lists where people list the books they read.</p>
+                    <p>and, those are really helpful. the right book in the right moment can fully shift how you view the world.</p>
+                    <p>but, never seen anyone do the same for content.</p>
+                    <p>below is a list. this isn't a "favorites" list. they are all pieces of content where after i watched them, i was better.</p>
+                    <p>the pieces of content in <span class="red">red</span> are ones that deeply affected me, and pieces i return to.</p>
+                    
+                    <div class="category-pills">
+                        <button id="random-content-pill" class="category-pill">surprise me</button>
+                    </div>
+                    
+                    <ul class="content-list">
+                        <li class="content-item" data-category="vid-essay">
+                            <a href="https://youtu.be/YAXTn0E-Zgo?si=xw6puoScqAUazd7s" target="_blank">a grand escape</a>
+                        </li>
+                        <li class="content-item" data-category="vid-essay">
+                            <a href="https://youtu.be/2RxDQwPmvtA?si=F6Zr5QekZ0euKZAG" target="_blank">back to square 1</a>
+                        </li>
+                        <li class="content-item" data-category="vid-essay">
+                            <a href="https://youtu.be/MaRf023YmmU?si=jxrgUuPyriYITi6S" target="_blank" class="highlight">i come back to this once in a while</a>
+                        </li>
+                        <li class="content-item" data-category="music">
+                            <a href="https://youtu.be/PCiWTRg-itY?si=_fnhnZo8MulJtN6q" target="_blank">amin toofani</a>
+                        </li>
+                        <li class="content-item" data-category="music anime">
+                            <a href="https://youtu.be/SnXkhkEvNIM?si=vkepRqn-CvusmC-o" target="_blank">光るなら／Goose house</a>
+                        </li>
+                        <li class="content-item" data-category="tech">
+                            <a href="https://youtu.be/amAq-WHAFs8?si=f8RTC6BanJOSP_ud" target="_blank">i wanna be a web3 dev so bad</a>
+                        </li>
+                        <li class="content-item" data-category="vid-essay">
+                            <a href="https://youtu.be/9fvETktnaRw?si=b4QWlmfWNje8-8TZ" target="_blank" class="highlight">a wise man's advice</a>
+                        </li>
+                        <li class="content-item" data-category="music anime">
+                            <a href="https://youtu.be/-jHkGl6tqtE?si=OJphr0LLYYnnX4o9" target="_blank">man i love your lie in april</a>
+                        </li>
+                        <li class="content-item" data-category="movie">
+                            <a href="https://youtu.be/CXcEbr1ixEc?si=sZ3NHEE5dTx_0IqG" target="_blank">memento</a>
+                        </li>
+                        <li class="content-item" data-category="music">
+                            <a href="https://youtu.be/eVTXPUF4Oz4?si=P8uXboltpuaBRoAU" target="_blank">linkin park</a>
+                        </li>
+                        <li class="content-item" data-category="music">
+                            <a href="https://youtu.be/Soa3gO7tL-c?si=swVQCDBoroiyLy9z" target="_blank">Boulevard Of Broken Dreams</a>
+                        </li>
+                        <li class="content-item" data-category="vid-essay">
+                            <a href="https://youtu.be/amXl7FG7J4c?si=SVAML_CvpaJzNbeM" target="_blank">Are you just living day to day?</a>
+                        </li>
+                        <li class="content-item" data-category="vid-essay">
+                            <a href="https://youtu.be/AlLhMySQTlo?si=C00TGbDMJR5wTGQj" target="_blank">Shuzo Matsuoka : You are the sun</a>
+                        </li>
+                        <li class="content-item" data-category="music">
+                            <a href="https://youtu.be/vZi8ET9k11g?si=JCYyOclZcv_WLjdC" target="_blank">feel it</a>
+                        </li>
+                        <li class="content-item" data-category="vid-essay">
+                            <a href="https://youtu.be/-sJU-n-aTxA?si=52Y6b8hHuqKA9hna" target="_blank">The Less I Let It Happen, The Better I Know</a>
+                        </li>
+                        <li class="content-item" data-category="movie">
+                            <a href="https://youtu.be/GUUQIocmSOw?si=NDgZsKV88cKPUZMZ" target="_blank">i am speed</a>
+                        </li>
+                        <li class="content-item" data-category="music">
+                            <a href="https://youtu.be/1wYNFfgrXTI?si=plDDmbD8-9rCYO12" target="_blank">when i'm gone</a>
+                        </li>
+                        <li class="content-item" data-category="tech">
+                            <a href="https://youtu.be/UZDiGooFs54?si=GIv0NHYMFgwwBA59" target="_blank" class="highlight">The moment we stopped understanding AI [AlexNet]</a>
+                        </li>
+                        <li class="content-item" data-category="tech">
+                            <a href="https://youtu.be/5eqRuVp65eY?si=5jFDZfA8Su3WH7f2" target="_blank">AI can't cross this line and we don't know why.</a>
+                        </li>
+                        <li class="content-item" data-category="tech">
+                            <a href="https://youtu.be/LPZh9BOjkQs?si=LfQLToM8BWpGQ5xJ" target="_blank">llms briefing</a>
+                        </li>
+                        <li class="content-item" data-category="vid-essay">
+                            <a href="https://youtu.be/JForD3F9a5E?si=GY-dHm2eo2AXIIZh" target="_blank" class="highlight">You're Worthless and Always Will Be.</a>
+                        </li>
+                        <li class="content-item" data-category="anime vid-essay">
+                            <a href="https://youtu.be/_XeLhFKw_yM?si=To6Qd-H_H88dWzub" target="_blank">Thank You, Evangelion.</a>
+                        </li>
+                        <li class="content-item" data-category="vid-essay">
+                            <a href="https://youtu.be/RFKJ6OjrjiI?si=aQDOJjbk89hnfIF2" target="_blank">we're bound to leave.</a>
+                        </li>
+                        <li class="content-item" data-category="vid-essay">
+                            <a href="https://youtu.be/vH_RUMRxdIE?si=sWPe7AiGxeorZxnR" target="_blank">good artists borrow, great artists steal.</a>
+                        </li>
+                        <li class="content-item" data-category="movie">
+                            <a>cars 2</a>
+                        </li>
+                        <li class="content-item" data-category="movie">
+                            <a class="highlight">interstellar</a>
+                        </li>
+                        <li class="content-item" data-category="movie">
+                            <a>Diary of a Wimpy kid</a>
+                        </li>
+                        <li class="content-item" data-category="movie">
+                            <a>How to lose a guy in 10 days</a>
+                        </li>
+                        <li class="content-item" data-category="movie">
+                            <a class="highlight">Ford v ferrari</a>
+                        </li>
+                        <li class="content-item" data-category="movie">
+                            <a>anything anywhere all at once</a>
+                        </li>
+                        <li class="content-item" data-category="tv">
+                            <a>Young Sheldon</a>
+                        </li>
+                        <li class="content-item" data-category="tv">
+                            <a>How I met your mother</a>
+                        </li>
+                        <li class="content-item" data-category="tv">
+                            <a>You</a>
+                        </li>
+                        <li class="content-item" data-category="tv">
+                            <a>The walking dead</a>
+                        </li>
+                        <li class="content-item" data-category="movie">
+                            <a>Superbad</a>
+                        </li>
+                        <li class="content-item" data-category="movie">
+                            <a>The hangover</a>
+                        </li>
+                        <li class="content-item" data-category="movie">
+                            <a>Rush hr 3</a>
+                        </li>
+                        <li class="content-item" data-category="tv">
+                            <a>The penguin</a>
+                        </li>
+                        <li class="content-item" data-category="tv">
+                            <a>One of us is lying</a>
+                        </li>
+                        <li class="content-item" data-category="tv">
+                            <a>Dexter</a>
+                        </li>
+                        <li class="content-item" data-category="tv">
+                            <a>Black mirror</a>
+                        </li>
+                        <li class="content-item" data-category="movie">
+                            <a>The gray man</a>
+                        </li>
+                        <li class="content-item" data-category="anime">
+                            <a>bocchi the rock</a>
+                        </li>
+                        <li class="content-item" data-category="anime">
+                            <a>beck/ the mongolian chop squad</a>
+                        </li>
+                        <li class="content-item" data-category="game">
+                            <a>uncharted 4</a>
+                        </li>
+                        <li class="content-item" data-category="game">
+                            <a>detroit become human</a>
+                        </li>
+                        <li class="content-item" data-category="game">
+                            <a class="highlight">god of war 4</a>
+                        </li>
+                        <li class="content-item" data-category="vid-essay">
+                            <a href="https://youtu.be/KN_JLq14dV4?si=tM-_alhhvUQ5SJet" target="_blank">Spider-Man: A gift and a curse</a>
+                        </li>
+                        <li class="content-item" data-category="movie">
+                            <a>stuart little</a>
+                        </li>
+                        <li class="content-item" data-category="manga">
+                            <a class="highlight">oyasumi punpun</a>
+                        </li>
+                        <li class="content-item" data-category="manga">
+                            <a>white lights</a>
+                        </li>
+                        <li class="content-item" data-category="manga">
+                            <a>My Dearest Self with Malice Aforethought</a>
+                        </li>
+                        <li class="content-item" data-category="anime">
+                            <a>stein's gate</a>
+                        </li>
+                    </ul>
+                </section>
+                
+                <div class="attribution">
+                    <p>this page was inspired by <a href="https://farza.com" target="_blank" rel="noopener noreferrer">farza</a></p>
+                </div>
+            </main>
+            
+            <footer>
+                <div class="footer-top">
+                    <p class="copyright">© Copyright 2025 Yuvraj Sharma, All Rights Reserved.</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/codewyuu" class="social-icon github" title="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/knowasyuvraj/" class="social-icon linkedin" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/yxs20_/" class="social-icon instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/codewyuu" class="social-icon twitter" title="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://open.spotify.com/user/31q5uilin7b54vwdgfptddxvpfby" class="social-icon spotify" title="Spotify" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-spotify"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@yuudesu" class="social-icon youtube" title="YouTube" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="cursor-glow.js"></script>
+    <script src="content-filter.js"></script>
+</body>
+</html>

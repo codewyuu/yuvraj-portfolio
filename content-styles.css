@@ -1,0 +1,212 @@
+/* Content List Styles */
+.content-intro {
+    margin-bottom: 40px;
+}
+
+.content-intro h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.stylized-list {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+    color: #1DB954; /* Spotify green color */
+}
+
+.content-intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.content-intro .red {
+    color: #ff0000;
+}
+
+.light-mode .content-intro h1 {
+    color: #000;
+}
+
+.dark-mode .content-intro h1 {
+    color: #fff;
+}
+
+.light-mode .content-intro p {
+    color: #777;
+}
+
+.dark-mode .content-intro p {
+    color: #aaa;
+}
+
+/* Category Pills */
+.category-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.category-pill {
+    padding: 8px 20px;
+    border-radius: 50px;
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.category-pill:hover {
+    background-color: rgba(59, 130, 246, 0.2);
+}
+
+.category-pill.active {
+    background-color: #3b82f6;
+    color: white;
+}
+
+/* Content List */
+.content-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content-list li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: baseline;
+}
+
+.content-list li::before {
+    content: '•';
+    margin-right: 15px;
+    color: #777;
+    font-size: 1.2rem;
+}
+
+.content-list a {
+    text-decoration: none;
+    color: #777;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.content-list a[href] {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
+.content-list a:hover {
+    color: #3b82f6;
+}
+
+.content-list a.highlight {
+    color: #ff0000;
+}
+
+.content-list .duration {
+    margin-left: 10px;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* Attribution styling */
+.attribution {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+}
+
+.attribution a {
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.attribution a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+/* Hide content categories initially */
+.content-category {
+    display: none;
+}
+
+.content-category.active {
+    display: block;
+}
+
+/* Resource List Styles (keeping for backward compatibility) */
+.resources h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #3b82f6;
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.resource-list li {
+    margin-bottom: 15px;
+    transition: transform 0.2s ease;
+}
+
+.resource-list li:hover {
+    transform: translateX(5px);
+}
+
+.resource-link {
+    display: block;
+    padding: 15px;
+    background-color: rgba(59, 130, 246, 0.1);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .resource-link {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #fff;
+}
+
+.light-mode .resource-link {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #333;
+}
+
+.resource-link:hover {
+    background-color: rgba(59, 130, 246, 0.2);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.resource-title {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #3b82f6;
+}
+
+.resource-description {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}

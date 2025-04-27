@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume - yuvraj</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="resume-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+</head>
+<body class="dark-mode">
+    <!-- Intro Video Animation -->
+    <div id="intro-animation" class="intro-animation">
+        <video id="intro-video" class="intro-video" src="front.mp4" muted></video>
+    </div>
+    
+    <!-- Grid Background with Radial Mask -->
+    <div class="grid-background">
+        <div class="radial-mask"></div>
+    </div>
+    
+    <div class="page-container">
+        <div class="container">
+            <div class="edge-left"></div>
+            <nav>
+                <div class="nav-links">
+                    <a href="./index.html" class="nav-link" target="_self" onclick="window.location.href='index.html'; return false;">home</a>
+                    <a href="#" class="nav-link">gallery</a>
+                    <a href="./interactive.html" class="nav-link" target="_self" onclick="window.location.href='interactive.html'; return false;">interactive</a>
+                    <a href="./content.html" class="nav-link" target="_self" onclick="window.location.href='content.html'; return false;">content</a>
+                    <a href="./resume.html" class="nav-link active">resume</a>
+                </div>
+                <div class="nav-right">
+                    <div id="spotify-container" class="spotify-container">
+                        <div class="spotify-icon"><i class="fab fa-spotify"></i></div>
+                        <div class="spotify-text-container">
+                            <span id="spotify-now-playing" class="spotify-now-playing">Not playing</span>
+                        </div>
+                    </div>
+                    <div id="clock" class="clock"></div>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+            </nav>
+            
+            <main>
+                <section class="resume-container">
+                    <div class="resume-header">
+                        <h1>YUVRAJ SHARMA</h1>
+                        <div class="contact-info">
+                            <span><i class="fas fa-phone"></i> 9650297776</span> | 
+                            <span><a href="mailto:codewyuu@gmail.com"><i class="fas fa-envelope"></i> codewyuu@gmail.com</a></span> | 
+                            <span><a href="https://linkedin.com/in/knowasyuvraj/"><i class="fab fa-linkedin"></i> linkedin.com/in/knowasyuvraj/</a></span>
+                        </div>
+                        <hr class="divider">
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h2>Technical Skills</h2>
+                        <div class="skills-item">
+                            <span class="skill-category">Languages and DataBases:</span> C/C++, Python, HTML, CSS, JavaScript, Pandas, Numpy, SQL, MySQL
+                        </div>
+                        <div class="skills-item">
+                            <span class="skill-category">Visualization Tools:</span> Tableau, Power BI.
+                        </div>
+                        <div class="skills-item">
+                            <span class="skill-category">Other Skills:</span> AI prompting, Debugging, Deployment, Graphic Design, Ms-Office, Videography, Video editing.
+                        </div>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h2>Experience</h2>
+                        
+                        <div class="experience-item">
+                            <div class="job-header">
+                                <div class="job-title-company">
+                                    <h3>PALLETS</h3>
+                                    <p class="job-role">Frontend developer, Core member, Co-founder</p>
+                                </div>
+                                <div class="job-duration">
+                                    <p>Mar 2025 – Present</p>
+                                    <p>Delhi, India</p>
+                                </div>
+                            </div>
+                            <ul class="job-details">
+                                <li>Helped the team create multiple various landing pages and dynamic websites for hackathons, one of them was for "veryoww" that made us win the XLRB 2025 hackathon organized by Sri Venkateswara College, Delhi University.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <div class="job-header">
+                                <div class="job-title-company">
+                                    <h3>SPIC</h3>
+                                    <p class="job-role">Graphic Designer, Core member</p>
+                                </div>
+                                <div class="job-duration">
+                                    <p>Oct 2024 – Present</p>
+                                    <p>Delhi, India</p>
+                                </div>
+                            </div>
+                            <ul class="job-details">
+                                <li>Helped the team create multiple various design for upcoming events.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <div class="job-header">
+                                <div class="job-title-company">
+                                    <h3>STHAPATYA</h3>
+                                    <p class="job-role">Graphic Designer, Core member</p>
+                                </div>
+                                <div class="job-duration">
+                                    <p>Oct 2024 – Jan 2024</p>
+                                    <p>Delhi, India</p>
+                                </div>
+                            </div>
+                            <ul class="job-details">
+                                <li>Helped the team create multiple various design for upcoming events.</li>
+                                <li>Created a video teaser for the event named "Smart-Site Sprint".</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h2>Personal Projects</h2>
+                        
+                        <div class="project-item">
+                            <div class="project-header">
+                                <div class="project-title">
+                                    <h3>CurSlate <span class="project-subtitle">/ A Cursor translation tool</span></h3>
+                                </div>
+                                <div class="project-duration">
+                                    <p>Feb 2025 - Present</p>
+                                </div>
+                            </div>
+                            <ul class="project-details">
+                                <li>Engineered a high-performance Chrome extension achieving 40% faster translations compared to traditional methods, processing text translations within 300ms using an efficient event handling system.</li>
+                                <li>Implemented a modular architecture supporting 10+ major languages with auto-detection capability, featuring a responsive UI that renders translations in 0.2 seconds.</li>
+                                <li>Developed an intuitive settings interface with customizable hover delays (0-1000ms) and keyboard shortcuts, resulting in improved user workflow efficiency and seamless language translation experience.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-item">
+                            <div class="project-header">
+                                <div class="project-title">
+                                    <h3>yuvv <span class="project-subtitle">/ A locally hosted password manager</span></h3>
+                                </div>
+                                <div class="project-duration">
+                                    <p>Sept 2024 – Dec 2024</p>
+                                </div>
+                            </div>
+                            <ul class="project-details">
+                                <li>Developed a secure password management system using Python, Flask, and Cryptography, implementing Fernet encryption for robust data protection.</li>
+                                <li>Designed an interactive web interface with HTML, CSS, and JavaScript, ensuring a user-friendly experience for secure password storage and retrieval.</li>
+                                <li>Implemented error handling and lightweight CSV-based storage, with planned enhancements for multi-user authentication, database scalability, and web deployment.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h2>Achievements</h2>
+                        <ul class="achievements-list">
+                            <li>XLR8 2025 Hackathon winners held at Sri Venkateswara College, Delhi University.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h2>Education</h2>
+                        <div class="education-item">
+                            <div class="education-header">
+                                <div class="education-title">
+                                    <h3>Dr. APJ Abdul Kalam Technical University</h3>
+                                    <p>Bachelor of Technology in Computer Science and Engineering</p>
+                                </div>
+                                <div class="education-duration">
+                                    <p>Sept 2023 – Present</p>
+                                    <p>Delhi, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h2>Languages</h2>
+                        <p>English, Hindi, Japanese</p>
+                    </div>
+                    
+                    <div class="resume-actions">
+                        <a href="https://drive.google.com/file/d/1WvwWfRTmb_wz1njDqaU1_Xw-2S6XaTJc/view?usp=sharing" class="resume-btn download-btn" target="_blank">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+                </section>
+            </main>
+            
+            <footer>
+                <div class="footer-top">
+                    <p class="copyright">© Copyright 2025 Yuvraj Sharma, All Rights Reserved.</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/codewyuu" class="social-icon github" title="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/knowasyuvraj/" class="social-icon linkedin" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/yxs20_/" class="social-icon instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/codewyuu" class="social-icon twitter" title="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://open.spotify.com/user/31q5uilin7b54vwdgfptddxvpfby" class="social-icon spotify" title="Spotify" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-spotify"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@yuudesu" class="social-icon youtube" title="YouTube" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="cursor-glow.js"></script>
+</body>
+</html>
