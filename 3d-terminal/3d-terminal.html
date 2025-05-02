@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Terminal | yuvraj</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            font-family: 'VT323', monospace;
+            cursor: none;
+        }
+        
+        #Canvas3D {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: transparent;
+        }
+        
+        #MainDiv {
+            display: none;
+        }
+        
+        #terminal-content {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #f0c420;
+            font-family: 'VT323', monospace;
+            font-size: 16px;
+            white-space: pre;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+            z-index: 2;
+            pointer-events: none;
+        }
+        
+        #MouseGlow {
+            display: none;
+        }
+        
+        #MouseGlowBlur {
+            display: none;
+        }
+        
+        #MainButton {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #000;
+            color: #f0c420;
+            border: 2px solid #f0c420;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #MainButton:hover {
+            background-color: #f0c420;
+            color: #000;
+        }
+        
+        .control-panel {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+        
+        .control-btn {
+            background-color: #000;
+            color: #f0c420;
+            border: 2px solid #f0c420;
+            border-radius: 4px;
+            padding: 5px 10px;
+            font-family: 'VT323', monospace;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        
+        .control-btn:hover {
+            background-color: #f0c420;
+            color: #000;
+        }
+        
+        .nav-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: #f0c420;
+            text-decoration: none;
+            font-family: 'VT323', monospace;
+            font-size: 16px;
+            background-color: #000;
+            border: 2px solid #f0c420;
+            border-radius: 4px;
+            padding: 5px 10px;
+            z-index: 1000;
+        }
+        
+        .nav-link:hover {
+            background-color: #f0c420;
+            color: #000;
+        }
+        
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 1;
+        }
+        
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(1.2) contrast(1.2);
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop id="tv-background">
+            <source src="../tv1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+    
+    <canvas id="Canvas3D"></canvas>
+    
+    <div id="MouseGlow"></div>
+    <div id="MouseGlowBlur"></div>
+    
+    <div id="MainDiv"></div>
+    
+    <div id="terminal-content"></div>
+    
+    <!-- All buttons removed, functionality moved to terminal commands -->
+    
+    <!-- Audio Elements -->
+    <audio id="ComputerBoot" src="Sounds/ComputerBoot.mp3"></audio>
+    <audio id="ComputerAmbient" src="Sounds/ComputerAmbient.mp3" loop></audio>
+    <audio id="ComputerBeep" src="Sounds/ComputerBeep.mp3"></audio>
+    <audio id="KeyboardPressed" src="Sounds/KeyboardPressed.mp3"></audio>
+    
+    <!-- Scripts -->
+    <script src="Scripts/ModelFiles.js"></script>
+    <script src="Scripts/RenderingFunctions.js"></script>
+    <script src="Scripts/TerminalFunction.js"></script>
+    <script src="Scripts/Main.js"></script>
+</body>
+</html>

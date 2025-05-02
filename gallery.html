@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | yuvraj</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+</head>
+<body class="dark-mode">
+    <!-- Grid Background with Radial Mask -->
+    <div class="grid-background">
+        <div class="radial-mask"></div>
+    </div>
+    
+    <div class="page-container">
+        <div class="container">
+            <div class="edge-left"></div>
+            <nav>
+                <div class="nav-links">
+                    <a href="./index.html" class="nav-link" target="_self" onclick="window.location.href='index.html'; return false;">home</a>
+                    <a href="#" class="nav-link active">gallery</a>
+                    <a href="./3d-terminal/3d-terminal.html" class="nav-link" target="_self" onclick="window.location.href='3d-terminal/3d-terminal.html'; return false;">interactive</a>
+                    <a href="./content.html" class="nav-link" target="_self" onclick="window.location.href='content.html'; return false;">content</a>
+                    <a href="./resume.html" class="nav-link" target="_self" onclick="window.location.href='resume.html'; return false;">resume</a>
+                </div>
+                <div class="nav-right">
+                    <div id="spotify-container" class="spotify-container">
+                        <div class="spotify-icon"><i class="fab fa-spotify"></i></div>
+                        <div class="spotify-text-container">
+                            <span id="spotify-now-playing" class="spotify-now-playing">Not playing</span>
+                        </div>
+                    </div>
+                    <div id="clock" class="clock"></div>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+            </nav>
+            
+            <main>
+                <section class="gallery-intro">
+                    <h1>my <span>gallery.</span></h1>
+                    <p><em>16+5 mp sony IMX519 f/1.7, 1/2.6"</em></p>
+                </section>
+                
+                <section class="gallery-container">
+                    <div class="gallery-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="travel">Travel</button>
+                        <button class="filter-btn" data-filter="portrait">Portrait</button>
+                        <button class="filter-btn" data-filter="nature">Nature</button>
+                        <button class="filter-btn" data-filter="architecture">Architecture</button>
+                    </div>
+                    
+                    <div class="gallery-grid">
+                        <!-- Travel Category -->
+                        <div class="gallery-item" data-category="travel">
+                            <div class="gallery-item-inner">
+                                <img src="images/train-window.jpg" alt="Silhouettes of people looking out a train window at sunset">
+                                <div class="item-overlay">
+                                    <h3>Window to Memories</h3>
+                                    <span class="item-category">Travel</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Portrait Category -->
+                        <div class="gallery-item" data-category="portrait">
+                            <div class="gallery-item-inner">
+                                <img src="images/placeholder1.jpg" alt="Urban exploration portrait">
+                                <div class="item-overlay">
+                                    <h3>Urban Exploration</h3>
+                                    <span class="item-category">Portrait</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Nature Category -->
+                        <div class="gallery-item" data-category="nature">
+                            <div class="gallery-item-inner">
+                                <img src="images/placeholder2.jpg" alt="Serene landscape scene">
+                                <div class="item-overlay">
+                                    <h3>Serene Landscapes</h3>
+                                    <span class="item-category">Nature</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Architecture Category -->
+                        <div class="gallery-item" data-category="architecture">
+                            <div class="gallery-item-inner">
+                                <img src="images/placeholder3.jpg" alt="City architectural perspective">
+                                <div class="item-overlay">
+                                    <h3>City Perspectives</h3>
+                                    <span class="item-category">Architecture</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- New n-series images -->
+                        <div class="gallery-item" data-category="travel">
+                            <div class="gallery-item-inner">
+                                <img src="images/n1.png" alt="Travel photography">
+                                <div class="item-overlay">
+                                    <h3>Urban Wanderer</h3>
+                                    <span class="item-category">Travel</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="nature">
+                            <div class="gallery-item-inner">
+                                <img src="images/n2.jpg" alt="Nature photography">
+                                <div class="item-overlay">
+                                    <h3>Natural Wonder</h3>
+                                    <span class="item-category">Nature</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="architecture">
+                            <div class="gallery-item-inner">
+                                <img src="images/n3.jpg" alt="Architectural photography">
+                                <div class="item-overlay">
+                                    <h3>Structural Beauty</h3>
+                                    <span class="item-category">Architecture</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="portrait">
+                            <div class="gallery-item-inner">
+                                <img src="images/n4.jpg" alt="Portrait photography">
+                                <div class="item-overlay">
+                                    <h3>Candid Moments</h3>
+                                    <span class="item-category">Portrait</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="nature">
+                            <div class="gallery-item-inner">
+                                <img src="images/n5.jpg" alt="Nature photography">
+                                <div class="item-overlay">
+                                    <h3>Wild Serenity</h3>
+                                    <span class="item-category">Nature</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="travel">
+                            <div class="gallery-item-inner">
+                                <img src="images/n6.jpg" alt="Travel photography">
+                                <div class="item-overlay">
+                                    <h3>Journey Highlights</h3>
+                                    <span class="item-category">Travel</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="architecture">
+                            <div class="gallery-item-inner">
+                                <img src="images/n7.jpg" alt="Architectural photography">
+                                <div class="item-overlay">
+                                    <h3>Urban Geometry</h3>
+                                    <span class="item-category">Architecture</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="portrait">
+                            <div class="gallery-item-inner">
+                                <img src="images/n8.jpg" alt="Portrait photography">
+                                <div class="item-overlay">
+                                    <h3>Human Expression</h3>
+                                    <span class="item-category">Portrait</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="nature">
+                            <div class="gallery-item-inner">
+                                <img src="images/n9.jpg" alt="Nature photography">
+                                <div class="item-overlay">
+                                    <h3>Earth's Canvas</h3>
+                                    <span class="item-category">Nature</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="travel">
+                            <div class="gallery-item-inner">
+                                <img src="images/n10.jpg" alt="Travel photography">
+                                <div class="item-overlay">
+                                    <h3>Destination Unknown</h3>
+                                    <span class="item-category">Travel</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="portrait">
+                            <div class="gallery-item-inner">
+                                <img src="images/n11.jpg" alt="Portrait photography">
+                                <div class="item-overlay">
+                                    <h3>Silent Stories</h3>
+                                    <span class="item-category">Portrait</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="architecture">
+                            <div class="gallery-item-inner">
+                                <img src="images/n12.jpg" alt="Architectural photography">
+                                <div class="item-overlay">
+                                    <h3>Modern Designs</h3>
+                                    <span class="item-category">Architecture</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="nature">
+                            <div class="gallery-item-inner">
+                                <img src="images/n13.jpg" alt="Nature photography">
+                                <div class="item-overlay">
+                                    <h3>Natural Patterns</h3>
+                                    <span class="item-category">Nature</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="travel">
+                            <div class="gallery-item-inner">
+                                <img src="images/n14.jpg" alt="Travel photography">
+                                <div class="item-overlay">
+                                    <h3>Wanderlust</h3>
+                                    <span class="item-category">Travel</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="portrait">
+                            <div class="gallery-item-inner">
+                                <img src="images/n15.jpg" alt="Portrait photography">
+                                <div class="item-overlay">
+                                    <h3>Character Study</h3>
+                                    <span class="item-category">Portrait</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="architecture">
+                            <div class="gallery-item-inner">
+                                <img src="images/n16.jpg" alt="Architectural photography">
+                                <div class="item-overlay">
+                                    <h3>Architectural Details</h3>
+                                    <span class="item-category">Architecture</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="nature">
+                            <div class="gallery-item-inner">
+                                <img src="images/n17.jpg" alt="Nature photography">
+                                <div class="item-overlay">
+                                    <h3>Wilderness</h3>
+                                    <span class="item-category">Nature</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="travel">
+                            <div class="gallery-item-inner">
+                                <img src="images/n18.jpg" alt="Travel photography">
+                                <div class="item-overlay">
+                                    <h3>Travel Diary</h3>
+                                    <span class="item-category">Travel</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="portrait">
+                            <div class="gallery-item-inner">
+                                <img src="images/n20.jpg" alt="Portrait photography">
+                                <div class="item-overlay">
+                                    <h3>Expressive Portrait</h3>
+                                    <span class="item-category">Portrait</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            
+            <!-- Glassomorphic Modal for Image Preview -->
+            <div class="modal-overlay">
+                <div class="modal-container">
+                    <button class="modal-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="modal-content">
+                        <div class="modal-image-container">
+                            <img src="" alt="" class="modal-image">
+                        </div>
+                        <div class="modal-info">
+                            <h2 class="modal-title"></h2>
+                            <span class="modal-category"></span>
+                            <div class="modal-description">
+                                <p></p>
+                            </div>
+                            <div class="modal-metadata">
+                                <div class="metadata-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span class="date"></span>
+                                </div>
+                                <div class="metadata-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location"></span>
+                                </div>
+                                <div class="metadata-item">
+                                    <i class="fas fa-camera"></i>
+                                    <span class="camera"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer>
+                <div class="footer-top">
+                    <p class="copyright">© Copyright 2025 Yuvraj Sharma, All Rights Reserved.</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/codewyuu" class="social-icon github" title="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/knowasyuvraj/" class="social-icon linkedin" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/yxs20_/" class="social-icon instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/codewyuu" class="social-icon twitter" title="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://open.spotify.com/user/31q5uilin7b54vwdgfptddxvpfby" class="social-icon spotify" title="Spotify" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-spotify"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@yuudesu" class="social-icon youtube" title="YouTube" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="cursor-glow.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>

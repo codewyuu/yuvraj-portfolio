@@ -1,0 +1,328 @@
+/* Terminal Page Styles */
+
+/* Video Background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#tv-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+}
+
+/* Terminal Main Content */
+.terminal-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    padding: 20px 0;
+}
+
+.terminal-container {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    height: 70vh;
+    gap: 20px;
+}
+
+/* Glassomorphic Containers */
+.glass-container {
+    background: rgba(30, 30, 30, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.light-mode .glass-container {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Terminal Interface */
+.terminal-interface {
+    flex: 1;
+    min-width: 300px;
+}
+
+.terminal-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: rgba(20, 20, 20, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.light-mode .terminal-header {
+    background: rgba(240, 240, 240, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.terminal-controls {
+    display: flex;
+    gap: 8px;
+    margin-right: 15px;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close {
+    background-color: #ff5f57;
+}
+
+.minimize {
+    background-color: #ffbd2e;
+}
+
+.maximize {
+    background-color: #28ca41;
+}
+
+.terminal-title {
+    font-family: monospace;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.light-mode .terminal-title {
+    color: #333;
+}
+
+.terminal-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    overflow-y: auto;
+    font-family: monospace;
+    color: #ddd;
+}
+
+.light-mode .terminal-content {
+    color: #333;
+}
+
+.terminal-output {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.welcome-message {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.command {
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+.terminal-input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    color: #3b82f6;
+    margin-right: 8px;
+}
+
+.terminal-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    caret-color: #3b82f6;
+}
+
+/* Preview Panel */
+.preview-panel {
+    flex: 1.5;
+    min-width: 400px;
+}
+
+.preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: rgba(20, 20, 20, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.light-mode .preview-header {
+    background: rgba(240, 240, 240, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.preview-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ddd;
+}
+
+.light-mode .preview-title {
+    color: #333;
+}
+
+.preview-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.preview-control {
+    background: transparent;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.preview-control:hover {
+    color: #3b82f6;
+}
+
+.preview-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.preview-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #555;
+    text-align: center;
+}
+
+.preview-placeholder i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.preview-placeholder p {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+/* Terminal Output Styling */
+.output-text {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.output-error {
+    color: #ff5f57;
+}
+
+.output-success {
+    color: #28ca41;
+}
+
+.output-info {
+    color: #3b82f6;
+}
+
+.output-warning {
+    color: #ffbd2e;
+}
+
+/* Preview Content Styling */
+.preview-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.preview-code {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+.light-mode .preview-code {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .terminal-container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .terminal-interface, .preview-panel {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .terminal-container {
+        padding: 0 15px;
+    }
+    
+    .terminal-interface, .preview-panel {
+        min-width: 0;
+    }
+}
+
+/* Animation for cursor blink */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    background-color: #3b82f6;
+    margin-left: 2px;
+    animation: blink 1s infinite;
+}
